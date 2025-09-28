@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>CodeCatalyst - Building the Future, Today</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-dark': '#0D1117',
+                        'brand-light': '#161B22',
+                        'brand-text': '#C9D1D9',
+                        'brand-primary': '#238636',
+                        'brand-primary-hover': '#2EA043',
+                        'brand-secondary': '#21262D',
+                        'brand-border': '#30363D',
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        .glow-effect {
+            box-shadow: 0 0 15px rgba(35, 134, 54, 0.3), 0 0 25px rgba(35, 134, 54, 0.2);
+        }
+    </style>
+</head>
+
+<body class="bg-brand-dark font-sans text-brand-text antialiased">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <!-- Header -->
+        <header class="sticky top-0 z-50 w-full border-b border-brand-border bg-brand-light/80 backdrop-blur-lg">
+            <div class="container mx-auto flex items-center justify-between px-6 py-4">
+                <div class="flex items-center gap-3">
+                    <svg class="h-8 w-8 text-brand-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                    </svg>
+                    <h1 class="text-2xl font-bold text-white">CodeCatalyst</h1>
+                </div>
+                <nav class="hidden items-center gap-8 md:flex">
+                    <a class="transition hover:text-white" href="web_development.html">Web Development</a>
+                    <a class="transition hover:text-white" href="Android_development.html">Android Development</a>
+                    <a class="transition hover:text-white" href="Ai_Agent.html">AI Automation</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-1">
+            <!-- Hero Section -->
+            <section class="relative h-[80vh] min-h-[600px] w-full text-white">
+                <div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1522252234503-e356532cafd5?q=80&w=2670&auto=format&fit=crop');"></div>
+                <div class="absolute inset-0 bg-brand-dark/70"></div>
+                <div class="relative z-10 flex h-full items-center">
+                    <div class="container mx-auto px-6 text-center">
+                        <h1 class="text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-6xl md:text-7xl" data-aos="fade-down">Innovate. Build. Accelerate.</h1>
+                        <p class="mx-auto mt-6 max-w-3xl text-lg text-brand-text md:text-xl" data-aos="fade-down" data-aos-delay="200">We are the architects of the digital frontier. CodeCatalyst delivers exceptional web, mobile, and AI solutions that redefine industries and propel your business into the future.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section class="bg-brand-dark py-20 sm:py-24">
+                <div class="container mx-auto px-6">
+                    <div class="text-center" data-aos="fade-up">
+                        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-5xl">Our Core Expertise</h2>
+                        <p class="mx-auto mt-4 max-w-2xl text-lg text-brand-text">Pioneering solutions engineered for tomorrow's challenges.</p>
+                    </div>
+                    <div class="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                        <a href="web_development.html" class="block" data-aos="fade-up" data-aos-delay="100">
+                            <div class="transform rounded-xl border border-brand-border bg-brand-light p-8 shadow-lg transition-transform duration-300 hover:scale-105 h-full">
+                                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop" alt="Web Development" class="mb-6 h-56 w-full rounded-lg object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/0d1117/c9d1d9?text=Web+Dev';">
+                                <h3 class="text-2xl font-bold text-white">Web Development</h3>
+                                <p class="mt-2 text-brand-text">Architecting scalable, secure, and visually stunning web applications that deliver powerful user experiences across all devices.</p>
+                            </div>
+                        </a>
+                        <a href="Android_development.html" class="block" data-aos="fade-up" data-aos-delay="200">
+                            <div class="transform rounded-xl border border-brand-border bg-brand-light p-8 shadow-lg transition-transform duration-300 hover:scale-105 h-full">
+                                <img src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?q=80&w=2070&auto=format&fit=crop" alt="Android Development" class="mb-6 h-56 w-full rounded-lg object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/0d1117/c9d1d9?text=Android+Dev';">
+                                <h3 class="text-2xl font-bold text-white">Android Development</h3>
+                                <p class="mt-2 text-brand-text">Building high-performance, feature-rich native and cross-platform Android applications that captivate users on the world's largest mobile OS.</p>
+                            </div>
+                        </a>
+                        <a href="Ai_Agent.html" class="block" data-aos="fade-up" data-aos-delay="300">
+                           <div class="transform rounded-xl border border-brand-border bg-brand-light p-8 shadow-lg transition-transform duration-300 hover:scale-105 h-full">
+                               <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?q=80&w=1932&auto=format&fit=crop" alt="AI Automation" class="mb-6 h-56 w-full rounded-lg object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/0d1117/c9d1d9?text=AI+Automation';">
+                                <h3 class="text-2xl font-bold text-white">AI Automation</h3>
+                                <p class="mt-2 text-brand-text">Deploying intelligent automation and machine learning models to streamline operations, enhance decision-making, and unlock new levels of productivity.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="border-t border-brand-border bg-brand-light">
+            <div class="container mx-auto px-6 py-8">
+                <div class="flex flex-col items-center justify-between gap-6 text-center sm:flex-row sm:text-left">
+                    <p class="text-sm text-brand-text">&copy; 2024 CodeCatalyst. All rights reserved.</p>
+                    <div class="flex gap-6">
+                        <a class="transition hover:text-white" href="#">Privacy Policy</a>
+                        <a class="transition hover:text-white" href="#">Terms of Service</a>
+                        <a class="transition hover:text-white" href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50,
+        });
+    </script>
+</body>
+</html>
+

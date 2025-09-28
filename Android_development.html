@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>CodeCatalyst for Android Development</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#13a4ec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        display: ["Space Grotesk"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "0.75rem",
+                        full: "9999px",
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-slate-200/80 bg-background-light/80 px-10 py-3 backdrop-blur-sm dark:border-slate-800/80 dark:bg-background-dark/80">
+            <div class="flex items-center gap-4">
+                <svg class="h-6 w-6 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path>
+                </svg>
+                <h2 class="text-lg font-bold tracking-tight text-slate-900 dark:text-white">CodeCatalyst</h2>
+            </div>
+        </header>
+
+        <main class="flex-1">
+            <section class="relative min-h-[480px]" id="hero">
+                <div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1605379399642-870262d3d051?q=80&w=2706&auto=format&fit=crop');"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 via-background-dark/50 to-transparent"></div>
+                <div class="relative z-10 mx-auto flex h-full min-h-[480px] max-w-5xl flex-col items-center justify-center gap-6 px-4 py-16 text-center">
+                    <h1 class="text-4xl font-bold leading-tight tracking-tighter text-white sm:text-5xl md:text-6xl" data-aos="fade-down">Ship Better Android Apps, Faster. For a Fraction of the Cost.</h1>
+                    <p class="max-w-3xl text-base text-slate-300 md:text-lg" data-aos="fade-down" data-aos-delay="200">Stop juggling clunky toolchains and overpriced services. CodeCatalyst gives you a powerful, all-in-one platform to design, build, test, and deploy stunning Android apps. Accelerate your time-to-market and slash development costs with our unified, affordable solution.</p>
+                </div>
+            </section>
+            
+            <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+                <div class="text-center" data-aos="fade-up">
+                    <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Key Offerings</h2>
+                </div>
+                <div class="mt-12 space-y-16">
+                    <div class="grid items-center gap-8 lg:grid-cols-2 lg:gap-16">
+                        <div data-aos="fade-right">
+                            <h3 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Your Complete Android & Cross-Platform Toolkit</h3>
+                            <p class="mt-4 text-slate-600 dark:text-slate-400">From native Kotlin/Java to efficient cross-platform Flutter, CodeCatalyst provides a seamless development experience. Get everything from a powerful IDE to automated CI/CD pipelines, all perfectly integrated to boost your productivity.</p>
+                        </div>
+                        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                            <div class="rounded-lg border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900" data-aos="fade-left" data-aos-delay="100">
+                                <div class="text-primary">
+                                    <svg fill="currentColor" height="32" viewBox="0 0 256 256" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z"></path></svg>
+                                </div>
+                                <h4 class="mt-4 text-lg font-bold text-slate-900 dark:text-white">Flutter App Development</h4>
+                                <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Build for both Android and iOS from a single, beautiful codebase. Reach more users and cut development time in half with our expert Flutter integration.</p>
+                            </div>
+                            <div class="rounded-lg border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900" data-aos="fade-left" data-aos-delay="200">
+                                <div class="text-primary">
+                                    <svg fill="currentColor" height="32" viewBox="0 0 256 256" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M237.66,86.34l-60-60a8,8,0,0,0-11.32,0L37.11,155.57a44.77,44.77,0,0,0,63.32,63.32L212.32,107l22.21-7.4a8,8,0,0,0,3.13-13.25ZM89.11,207.57a28.77,28.77,0,0,1-40.68-40.68l28.8-28.8c8.47-2.9,21.75-4,39.07,5,10.6,5.54,20.18,8,28.56,8.73ZM205.47,92.41a8,8,0,0,0-3.13,1.93l-39.57,39.57c-8.47,2.9-21.75,4-39.07-5-10.6-5.54-20.18-8-28.56-8.73L172,43.31,217.19,88.5Z"></path></svg>
+                                </div>
+                                <h4 class="mt-4 text-lg font-bold text-slate-900 dark:text-white">UI/UX Design & Prototyping</h4>
+                                <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Go from idea to interactive prototype in record time. Craft pixel-perfect, intuitive interfaces that users will love, driving engagement and retention.</p>
+                            </div>
+                            <div class="rounded-lg border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900" data-aos="fade-left" data-aos-delay="300">
+                                <div class="text-primary">
+                                    <svg fill="currentColor" height="32" viewBox="0 0 256 256" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M103.77,185.94C103.38,187.49,93.63,224,40,224a8,8,0,0,1-8-8c0-53.63,36.51-63.38,38.06-63.77a8,8,0,0,1,3.88,15.53c-.9.25-22.42,6.54-25.56,39.86C81.7,204.48,88,183,88.26,182a8,8,0,0,1,15.51,4Zm93-67.4L192,123.31v58.33A15.91,15.91,0,0,1,187.32,193L153,227.3A15.91,15.91,0,0,1,141.7,232a16.11,16.11,0,0,1-5.1-.83,15.94,15.94,0,0,1-10.78-12.92l-5.37-38.49L76.24,135.55l-38.47-5.37A16,16,0,0,1,28.7,103L63,68.68A15.91,15.91,0,0,1,74.36,64h58.33l4.77-4.77c26.68-26.67,58.83-27.82,71.41-27.07a16,16,0,0,1,15,15C224.6,59.71,223.45,91.86,196.78,118.54ZM40,114.34l37.15,5.18L116.69,80H74.36ZM91.32,128,128,164.68l57.45-57.45a76.46,76.46,0,0,0,22.42-59.16,76.65,76.65,0,0,0-59.11,22.47ZM176,139.31l-39.53,39.53L141.67,216,176,181.64Z"></path></svg>
+                                </div>
+                                <h4 class="mt-4 text-lg font-bold text-slate-900 dark:text-white">CI/CD & DevOps</h4>
+                                <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Eliminate release day headaches. Automate your builds, run tests, and deploy to the Play Store with one click. Ship updates faster and with more confidence than ever before.</p>
+                            </div>
+                            <div class="rounded-lg border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900" data-aos="fade-left" data-aos-delay="400">
+                                <div class="text-primary">
+                                    <svg fill="currentColor" height="32" viewBox="0 0 256 256" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm88-29.84q.06-2.16,0-4.32l14.92-18.64a8,8,0,0,0,1.48-7.06,107.21,107.21,0,0,0-10.88-26.25,8,8,0,0,0-6-3.93l-23.72-2.64q-1.48-1.56-3-3L186,40.54a8,8,0,0,0-3.94-6,107.71,107.71,0,0,0-26.25-10.87,8,8,0,0,0-7.06,1.49L130.16,40Q128,40,125.84,40L107.2,25.11a8,8,0,0,0-7.06-1.48A107.6,107.6,0,0,0,73.89,34.51a8,8,0,0,0-3.93,6L67.32,64.27q-1.56,1.49-3,3L40.54,70a8,8,0,0,0-6,3.94,107.71,107.71,0,0,0-10.87,26.25,8,8,0,0,0,1.49,7.06L40,125.84Q40,128,40,130.16L25.11,148.8a8,8,0,0,0-1.48,7.06,107.21,107.21,0,0,0,10.88,26.25,8,8,0,0,0,6,3.93l23.72,2.64q1.49,1.56,3,3L70,215.46a8,8,0,0,0,3.94,6,107.71,107.71,0,0,0,26.25,10.87,8,8,0,0,0,7.06-1.49L125.84,216q2.16.06,4.32,0l18.64,14.92a8,8,0,0,0,7.06,1.48,107.21,107.21,0,0,0,26.25-10.88,8,8,0,0,0,3.93-6l2.64-23.72q1.56-1.48,3-3L215.46,186a8,8,0,0,0,6-3.94,107.71,107.71,0,0,0,10.87-26.25,8,8,0,0,0-1.49-7.06Zm-16.1-6.5a73.93,73.93,0,0,1,0,8.68,8,8,0,0,0,1.74,5.48l14.19,17.73a91.57,91.57,0,0,1-6.23,15L187,173.11a8,8,0,0,0-5.1,2.64,74.11,74.11,0,0,1-6.14,6.14,8,8,0,0,0-2.64,5.1l-2.51,22.58a91.32,91.32,0,0,1-15,6.23l-17.74-14.19a8,8,0,0,0-5-1.75h-.48a73.93,73.93,0,0,1-8.68,0,8,8,0,0,0-5.48,1.74L100.45,215.8a91.57,91.57,0,0,1-15-6.23L82.89,187a8,8,0,0,0-2.64-5.1,74.11,74.11,0,0,1-6.14-6.14,8,8,0,0,0-5.1-2.64L46.43,170.6a91.32,91.32,0,0,1-6.23-15l14.19-17.74a8,8,0,0,0,1.74-5.48,73.93,73.93,0,0,1,0-8.68,8,8,0,0,0-1.74-5.48L40.2,100.45a91.57,91.57,0,0,1,6.23-15L69,82.89a8,8,0,0,0,5.1-2.64,74.11,74.11,0,0,1,6.14-6.14A8,8,0,0,0,82.89,69L85.4,46.43a91.32,91.32,0,0,1,15-6.23l17.74,14.19a8,8,0,0,0,5.48,1.74,73.93,73.93,0,0,1,8.68,0,8,8,0,0,0,5.48-1.74L155.55,40.2a91.57,91.57,0,0,1,15,6.23L173.11,69a8,8,0,0,0,2.64,5.1,74.11,74.11,0,0,1,6.14,6.14,8,8,0,0,0,5.1,2.64l22.58,2.51a91.32,91.32,0,0,1,6.23,15l-14.19,17.74A8,8,0,0,0,199.87,123.66Z"></path></svg>
+                                </div>
+                                <h4 class="mt-4 text-lg font-bold text-slate-900 dark:text-white">Ongoing Support & Maintenance</h4>
+                                <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">We're your long-term partner. Get expert support and proactive maintenance to keep your app secure, performant, and compatible with the latest Android versions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="bg-slate-100 py-16 dark:bg-slate-900/50 sm:py-24">
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div class="text-center" data-aos="fade-up">
+                        <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Technologies We Support</h2>
+                    </div>
+                    <div class="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5 lg:gap-8">
+                        <div class="flex items-center gap-4 rounded-lg bg-white p-4 shadow-sm dark:bg-slate-900" data-aos="zoom-in" data-aos-delay="100">
+                            <svg class="h-8 w-8 text-primary" fill="currentColor" height="32" viewBox="0 0 256 256" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M176,156a12,12,0,1,1-12-12A12,12,0,0,1,176,156ZM92,144a12,12,0,1,0,12,12A12,12,0,0,0,92,144Zm148,24v24a16,16,0,0,1-16,16H32a16,16,0,0,1-16-16V169.13A113.38,113.38,0,0,1,51.4,86.72L26.34,61.66A8,8,0,0,1,37.66,50.34L63.82,76.5a111.43,111.43,0,0,1,128.55-.19l26-26a8,8,0,0,1,11.32,11.32L204.82,86.5c.75.71,1.5,1.43,2.24,2.17A111.25,111.25,0,0,1,240,168Zm-16,0a96,96,0,0,0-96-96h-.34C74.91,72.18,32,115.75,32,169.13V192H224Z"></path></svg>
+                            <h3 class="font-bold text-slate-900 dark:text-white">Flutter</h3>
+                        </div>
+                        <div class="flex items-center gap-4 rounded-lg bg-white p-4 shadow-sm dark:bg-slate-900" data-aos="zoom-in" data-aos-delay="200">
+                            <svg class="h-8 w-8 text-primary" fill="currentColor" height="32" viewBox="0 0 256 256" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M176,156a12,12,0,1,1-12-12A12,12,0,0,1,176,156ZM92,144a12,12,0,1,0,12,12A12,12,0,0,0,92,144Zm148,24v24a16,16,0,0,1-16,16H32a16,16,0,0,1-16-16V169.13A113.38,113.38,0,0,1,51.4,86.72L26.34,61.66A8,8,0,0,1,37.66,50.34L63.82,76.5a111.43,111.43,0,0,1,128.55-.19l26-26a8,8,0,0,1,11.32,11.32L204.82,86.5c.75.71,1.5,1.43,2.24,2.17A111.25,111.25,0,0,1,240,168Zm-16,0a96,96,0,0,0-96-96h-.34C74.91,72.18,32,115.75,32,169.13V192H224Z"></path></svg>
+                            <h3 class="font-bold text-slate-900 dark:text-white">Kotlin</h3>
+                        </div>
+                        <div class="flex items-center gap-4 rounded-lg bg-white p-4 shadow-sm dark:bg-slate-900" data-aos="zoom-in" data-aos-delay="300">
+                            <svg class="h-8 w-8 text-primary" fill="currentColor" height="32" viewBox="0 0 256 256" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M176,156a12,12,0,1,1-12-12A12,12,0,0,1,176,156ZM92,144a12,12,0,1,0,12,12A12,12,0,0,0,92,144Zm148,24v24a16,16,0,0,1-16,16H32a16,16,0,0,1-16-16V169.13A113.38,113.38,0,0,1,51.4,86.72L26.34,61.66A8,8,0,0,1,37.66,50.34L63.82,76.5a111.43,111.43,0,0,1,128.55-.19l26-26a8,8,0,0,1,11.32,11.32L204.82,86.5c.75.71,1.5,1.43,2.24,2.17A111.25,111.25,0,0,1,240,168Zm-16,0a96,96,0,0,0-96-96h-.34C74.91,72.18,32,115.75,32,169.13V192H224Z"></path></svg>
+                            <h3 class="font-bold text-slate-900 dark:text-white">Java</h3>
+                        </div>
+                        <div class="flex items-center gap-4 rounded-lg bg-white p-4 shadow-sm dark:bg-slate-900" data-aos="zoom-in" data-aos-delay="400">
+                            <svg class="h-8 w-8 text-primary" fill="currentColor" height="32" viewBox="0 0 256 256" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M176,156a12,12,0,1,1-12-12A12,12,0,0,1,176,156ZM92,144a12,12,0,1,0,12,12A12,12,0,0,0,92,144Zm148,24v24a16,16,0,0,1-16,16H32a16,16,0,0,1-16-16V169.13A113.38,113.38,0,0,1,51.4,86.72L26.34,61.66A8,8,0,0,1,37.66,50.34L63.82,76.5a111.43,111.43,0,0,1,128.55-.19l26-26a8,8,0,0,1,11.32,11.32L204.82,86.5c.75.71,1.5,1.43,2.24,2.17A111.25,111.25,0,0,1,240,168Zm-16,0a96,96,0,0,0-96-96h-.34C74.91,72.18,32,115.75,32,169.13V192H224Z"></path></svg>
+                            <h3 class="font-bold text-slate-900 dark:text-white">Gradle</h3>
+                        </div>
+                        <div class="flex items-center gap-4 rounded-lg bg-white p-4 shadow-sm dark:bg-slate-900" data-aos="zoom-in" data-aos-delay="500">
+                            <svg class="h-8 w-8 text-primary" fill="currentColor" height="32" viewBox="0 0 256 256" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M224,128a96,96,0,1,1-21.95-61.09,8,8,0,1,1-12.33,10.18A80,80,0,1,0,207.6,136H128a8,8,0,0,1,0-16h88A8,8,0,0,1,224,128Z"></path></svg>
+                            <h3 class="font-bold text-slate-900 dark:text-white">Firebase</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="bg-slate-100 py-16 dark:bg-slate-900/50 sm:py-24">
+                <div class="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8" data-aos="fade-up">
+                    <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Ready to Build Your Breakthrough App?</h2>
+                    <p class="mt-4 text-lg text-slate-600 dark:text-slate-400">Don't let budget constraints or inefficient tools hold you back. Join hundreds of developers who choose CodeCatalyst to build remarkable Android applications that stand out on the Play Store.</p>
+                    <div class="mt-8 flex justify-center">
+                        <a href="connect.html">
+                            <button class="flex h-12 min-w-[84px] max-w-sm flex-1 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-6 text-base font-bold text-white shadow-lg transition-all hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/50 hover:scale-105">
+                                <span class="truncate">Start Building Now</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="border-t border-slate-200/80 bg-background-light dark:border-slate-800/80 dark:bg-background-dark">
+            <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+                <div class="flex flex-wrap items-center justify-center gap-6 text-center md:justify-around">
+                    <a class="text-sm text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary transition-colors" href="#">Terms of Service</a>
+                    <a class="text-sm text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary transition-colors" href="#">Privacy Policy</a>
+                    <a class="text-sm text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary transition-colors" href="#">Contact Us</a>
+                </div>
+                <p class="mt-8 text-center text-sm text-slate-500 dark:text-slate-400">© 2024 CodeCatalyst. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 700, // animation duration in ms
+            once: true, // whether animation should happen only once - while scrolling down
+            offset: 50, // offset (in px) from the original trigger point
+        });
+    </script>
+
+</body>
+</html>
